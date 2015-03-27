@@ -1,0 +1,33 @@
+name:    verilog-gt
+version: 0.0.0
+
+category: Hardware, Embedded, Compiler
+
+synopsis: Verilog simulator.
+
+description:
+  A lightweight Verilog simulator supporting a small subset of Verilog.
+
+author:     Tom Hawkins <tomahawkins@gmail.com>
+maintainer: Tom Hawkins <tomahawkins@gmail.com>
+
+license:      BSD3
+license-file: LICENSE
+
+homepage: http://github.com/tomahawkins/verilog-gt
+
+build-type:    Simple
+cabal-version: >= 1.10
+
+executable verilog-gt
+  default-language: Haskell2010
+  main-is: Main.hs
+  build-depends: 
+    base       >= 4.0   && < 5.0,
+    verilog    >= 0.0.11 && < 0.1
+  ghc-options: -W
+
+source-repository head
+  type:     git
+  location: git://github.com/tomahawkins/verilog-gt.git
+
